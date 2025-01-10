@@ -29,7 +29,7 @@ const ServiceProviderDashboard = () => {
             console.log("Request headers:", headers);
     
             // Changed endpoint to service-provider-data
-            const response = await fetch("http://localhost:5000/service-provider-data", {
+            const response = await fetch("https://akramsheriff5.pythonanywhere.com//service-provider-data", {
                 headers: headers,
             });
             
@@ -106,7 +106,7 @@ const ServiceProviderDashboard = () => {
       const token = localStorage.getItem("token");
       
       // Call backend to invalidate token
-      const response = await fetch("http://localhost:5000/logout", {
+      const response = await fetch("https://akramsheriff5.pythonanywhere.com//logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

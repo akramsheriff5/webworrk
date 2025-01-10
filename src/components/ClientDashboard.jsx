@@ -28,7 +28,7 @@ const ClientDashboard = () => {
         };
         console.log("Request headers:", headers);
 
-        const response = await fetch("http://localhost:5000/user-data", {
+        const response = await fetch("https://akramsheriff5.pythonanywhere.com//user-data", {
           headers: headers,
         });
         
@@ -102,7 +102,7 @@ const ClientDashboard = () => {
     try {
       const token = localStorage.getItem("token");
       
-      const response = await fetch("http://localhost:5000/logout", {
+      const response = await fetch("https://akramsheriff5.pythonanywhere.com//logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

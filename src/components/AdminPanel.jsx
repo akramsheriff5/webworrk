@@ -17,7 +17,7 @@ const AdminPanel = () => {
     const fetchData = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch('http://localhost:5000/data', {
+        const response = await fetch('https://akramsheriff5.pythonanywhere.com//data', {
           headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
@@ -80,7 +80,7 @@ const AdminPanel = () => {
   const handleApprove = async (projectId) => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch('http://localhost:5000/approve', {
+      const response = await fetch('https://akramsheriff5.pythonanywhere.com//approve', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -111,7 +111,7 @@ const AdminPanel = () => {
   const handleReject = async (projectId) => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch('http://localhost:5000/reject', {
+      const response = await fetch('https://akramsheriff5.pythonanywhere.com//reject', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -155,7 +155,7 @@ const AdminPanel = () => {
     try {
       const token = localStorage.getItem("token");
       
-      const response = await fetch("http://localhost:5000/logout", {
+      const response = await fetch("https://akramsheriff5.pythonanywhere.com//logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
