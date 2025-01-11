@@ -8,7 +8,7 @@ import AdminPanel from "./components/AdminPanel";
 
 const AppRoutes = () => {
   return (
-    <Routes basename="/webworrk">
+    <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/ClientDashboard" element={<ClientDashboard />} />
