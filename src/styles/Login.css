@@ -1,0 +1,167 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Background Container */
+  .background-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    padding: 20px;
+  }
+  
+  /* Logo Styles */
+  .header-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Content Wrapper */
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  /* Card Container */
+  .login-box {
+    padding: 40px;
+    background: #1c1c1c;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    width: 400px;
+  }
+  
+  /* Heading Styles */
+  h2 {
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Input Box */
+  .input-box {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .input-box input,
+  .input-box select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #262626;
+    color: white;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  /* Dropdown Styling */
+  .input-box select {
+    cursor: pointer;
+    appearance: none; /* Remove default dropdown arrow */
+  }
+  
+  /* Floating Label */
+  .input-box label {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #888;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  
+  /* Label Animation */
+  .input-box input:focus + label,
+  .input-box input:valid + label,
+  .input-box select:focus + label,
+  .input-box select:valid + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #a855f7;
+  }
+  
+  /* Options */
+  .options {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  /* Forgot Password - Updated to White */
+  .options .forgot-password {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .options .forgot-password:hover {
+    color: #2519ab;
+  }
+  
+  /* Submit Button */
+  .login-btn {
+    width: 100%;
+    padding: 15px;
+    background: #a855f7;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .login-btn:hover {
+    background: #8b3be4;
+  }
+  
+  /* Register Link */
+  .register-link {
+    color: rgb(229, 226, 226);
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .register-link a {
+    color: #34d399;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  /* Image Container */
+  .image-container img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .login-box {
+      width: 100%;
+    }
+  
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
